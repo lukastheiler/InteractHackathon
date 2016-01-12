@@ -9,9 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var count=0;
+    
+    @IBOutlet weak var counterLabel: UILabel!
+    
+    func updateCounter(){
+        count=count+1
+        counterLabel.text="#\(count) mal gedrückt!"
+    }
+    
+    @IBAction func countButtonPressed(sender: AnyObject) {
+        count=count+1
+        counterLabel.text="#\(count) mal gedrückt!"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateCounter()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
