@@ -114,6 +114,6 @@ Für push notifications evt den Background mode anpassen (Bin mir grad nicht sic
 ## Zusatzaufgaben
 
 - Erstelle ein App-Icon mittels [https://makeappicon.com](https://makeappicon.com).
-
+- Nehme 3 Beacons, setze die Hintergrundfarbe je nach Zone (Blau, Rot, Grün)
 
 
