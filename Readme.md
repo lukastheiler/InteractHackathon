@@ -22,11 +22,23 @@ Problem: beim laden ist der counter nicht 0. Lösung über funktion.
 
 ![alt text](images/s2.png =250x)
 
-## 3. SDK einfügen
+## 3. Interactor konfigurieren
+Einloggen, Beacon hinzufügen. 
+Zone, Event, jedes mal ein push "CONTER!!", Zone auf sehr klein setzen.
+Batterie rausnehmen, da sonst das SDK kein Event triggert. 
+_--> Account für alle vorbanden?_
+_--> Beacon für alle vorhanden?_
+
+## 4. SDK einfügen
+Wichtig: Auf dem iPhone laufen lassen, sonst gibt es Fehler!
+
 Schritte auf der [Webseite](https://developer.interactor.swisscom.ch/developer/sdk/swift/getting-started) durchführen.
+(Hinweis: Interactor.framework verwenden, Other linker flags -lc++).
+Wichtig: Interactor.framework unter General/Embedded Binaries hinzufügen.
 
+--> Grundrauschen erscheint auf der Konsole.
 
-(Achtung: Muss auf dem iPhone laufen!)
+## 5. Counter anpassen
 
 
 ## Zusatzaufgaben

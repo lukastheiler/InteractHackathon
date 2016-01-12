@@ -12,7 +12,26 @@
 		B6AC38DB1C45905B00A65D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC38D91C45905B00A65D47 /* Main.storyboard */; };
 		B6AC38DD1C45905B00A65D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC38DC1C45905B00A65D47 /* Assets.xcassets */; };
 		B6AC38E01C45905B00A65D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC38DE1C45905B00A65D47 /* LaunchScreen.storyboard */; };
+		B6AC38EE1C459C3900A65D47 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC38ED1C459C3900A65D47 /* CoreBluetooth.framework */; };
+		B6AC38F01C459C4200A65D47 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC38EF1C459C4200A65D47 /* SystemConfiguration.framework */; };
+		B6AC38F21C459C4900A65D47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC38F11C459C4900A65D47 /* CoreLocation.framework */; };
+		B6AC38FC1C45A0F300A65D47 /* Interactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC38EB1C459BFF00A65D47 /* Interactor.framework */; };
+		B6AC38FD1C45A0F300A65D47 /* Interactor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC38EB1C459BFF00A65D47 /* Interactor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6AC38FE1C45A0F300A65D47 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6AC38FD1C45A0F300A65D47 /* Interactor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B6AC38D21C45905B00A65D47 /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +41,11 @@
 		B6AC38DC1C45905B00A65D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6AC38DF1C45905B00A65D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6AC38E11C45905B00A65D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AC38EA1C459B5E00A65D47 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		B6AC38EB1C459BFF00A65D47 /* Interactor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Interactor.framework; sourceTree = "<group>"; };
+		B6AC38ED1C459C3900A65D47 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B6AC38EF1C459C4200A65D47 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6AC38F11C459C4900A65D47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AC38F21C459C4900A65D47 /* CoreLocation.framework in Frameworks */,
+				B6AC38F01C459C4200A65D47 /* SystemConfiguration.framework in Frameworks */,
+				B6AC38EE1C459C3900A65D47 /* CoreBluetooth.framework in Frameworks */,
+				B6AC38FC1C45A0F300A65D47 /* Interactor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +66,9 @@
 		B6AC38C91C45905B00A65D47 = {
 			isa = PBXGroup;
 			children = (
+				B6AC38F11C459C4900A65D47 /* CoreLocation.framework */,
+				B6AC38EF1C459C4200A65D47 /* SystemConfiguration.framework */,
+				B6AC38ED1C459C3900A65D47 /* CoreBluetooth.framework */,
 				B6AC38D41C45905B00A65D47 /* Hackathon */,
 				B6AC38D31C45905B00A65D47 /* Products */,
 			);
@@ -54,12 +85,14 @@
 		B6AC38D41C45905B00A65D47 /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				B6AC38EA1C459B5E00A65D47 /* Bridge.h */,
 				B6AC38D51C45905B00A65D47 /* AppDelegate.swift */,
 				B6AC38D71C45905B00A65D47 /* ViewController.swift */,
 				B6AC38D91C45905B00A65D47 /* Main.storyboard */,
 				B6AC38DC1C45905B00A65D47 /* Assets.xcassets */,
 				B6AC38DE1C45905B00A65D47 /* LaunchScreen.storyboard */,
 				B6AC38E11C45905B00A65D47 /* Info.plist */,
+				B6AC38EB1C459BFF00A65D47 /* Interactor.framework */,
 			);
 			path = Hackathon;
 			sourceTree = "<group>";
@@ -74,6 +107,7 @@
 				B6AC38CE1C45905B00A65D47 /* Sources */,
 				B6AC38CF1C45905B00A65D47 /* Frameworks */,
 				B6AC38D01C45905B00A65D47 /* Resources */,
+				B6AC38FE1C45A0F300A65D47 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,10 +281,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hackathon",
+				);
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = io.theiler.Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Bridge.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -259,10 +300,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hackathon",
+				);
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = io.theiler.Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Bridge.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
