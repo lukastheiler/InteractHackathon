@@ -9,15 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var count=0;
+    
+    @IBOutlet weak var counterLabel: UILabel!
+    
+    func updateCounter(){
+        count=count+1
+        counterLabel.text="#\(count) mal gedrückt!"
+    }
+    
+    @IBAction func countButtonPressed(sender: AnyObject) {
+        updateCounter()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        updateCounter()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("updateCounter"), name:"count", object: nil);
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 
 

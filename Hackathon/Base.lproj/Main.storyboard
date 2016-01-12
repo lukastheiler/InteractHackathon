@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,18 +18,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Hackathon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBJ-F9-t1M">
-                                <rect key="frame" x="20" y="28" width="131" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Hackathon!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STb-vt-Qjq">
+                                <rect key="frame" x="20" y="235" width="560" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtc-AZ-tss">
+                                <rect key="frame" x="20" y="543" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dZk-Im-Lct"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Count"/>
+                                <connections>
+                                    <action selector="countButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KE2-CD-acO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="STb-vt-Qjq" firstAttribute="leading" secondItem="Rtc-AZ-tss" secondAttribute="leading" id="7Hc-zD-WvQ"/>
+                            <constraint firstItem="STb-vt-Qjq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7bW-np-zaI"/>
+                            <constraint firstItem="STb-vt-Qjq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7j1-mi-FHV"/>
+                            <constraint firstItem="STb-vt-Qjq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="215" id="8Pj-ao-Phq"/>
+                            <constraint firstItem="Rtc-AZ-tss" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="J4g-J7-KW6"/>
+                            <constraint firstAttribute="bottom" secondItem="Rtc-AZ-tss" secondAttribute="bottom" constant="20" symbolic="YES" id="Pre-GN-dc6"/>
+                            <constraint firstItem="Rtc-AZ-tss" firstAttribute="trailing" secondItem="STb-vt-Qjq" secondAttribute="trailing" id="RRO-Ke-p9d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="STb-vt-Qjq" id="V24-yt-M29"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
 </document>
