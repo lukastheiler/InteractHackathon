@@ -41,7 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EventListener {
     
     func eventTriggered(data: LBSEvent!) {
         self.notify(data.name)
-        
+        print("BEACON FOUND!!!"+data.name)
+        NSNotificationCenter.defaultCenter().postNotificationName("count", object: nil)
     }
     
     func notify(text: String) {

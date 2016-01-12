@@ -130,6 +130,11 @@
 				TargetAttributes = {
 					B6AC38D11C45905B00A65D47 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -334,6 +339,7 @@
 				B6AC38E61C45905B00A65D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
