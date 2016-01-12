@@ -10,14 +10,14 @@ Xcode starten, Projekt hinzufügen, Umgebung erklären.
 
 Main.storyboard öffnen, einen Label "Hello World" einfügen hinzufügen. 
 Achtung: Constraints sind manchal mühsam, abhilfe via: 
-	![alt text](https://github.com/lukastheiler/InteractHackathon/blob/master/images/s0.png =250x)
+![alt text](images/s0.png)
 
 "Run" im Simulator. 
 
 iPhone anhängen, Run auf iPhone (Braucht Apple ID + Credentials)
 _--> Frage:  Wer hat den Account ?_
 
-	![alt text](https://github.com/lukastheiler/InteractHackathon/blob/master/images/s1.png =250x)
+![alt text](images/s1.png)
 
 ## 2. Interaktion hinzufügen
 Button "Count" hinzufügen
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
 
 ```
 
-	![alt text](https://github.com/lukastheiler/InteractHackathon/blob/master/images/s2.png =250x)
+![alt text](images/s2.png)
 
 ## 3. Interactor konfigurieren
 Einloggen, Beacon hinzufügen. 
