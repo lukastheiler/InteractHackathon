@@ -1,5 +1,7 @@
 # Setup
 
+https://github.com/lukastheiler/InteractHackathon
+
 - Es soll ein intensiver und spassiger Tag werden 
 - Jedes Team stellt am Ende vom Tag in einm 5' Pitch vor, was es gemacht hat.
 - Wir bilden 3-er Teams, 1 Mac 3 Phones, 3. Beacons 3 Personen.
@@ -9,13 +11,13 @@
 
 *Zwingend für alle Junior Hackers*
 
-## Interactor
+## 1. Interactor
 Interactor Konfigurieren: einloggen, Beacons hinzufügen. 
 
-## App
+## 2. App
 Sample App [runterladen](https://developer.interactor.swisscom.ch/download-sdk-and-apps), in XCode öffnen, API Key anpassen app auf dem iPhone laufen lassen.
 
-## Play
+## 3. Play
 Notifications anpassen, Events usw. 
 Spielt folgende Usecases nach:
 - Ich komme in eine Zone : "Hallo Pina"
@@ -29,8 +31,10 @@ Das erste Ziel ist, eine App zu erstellen, welche zählt, wie oft ich beim Beaco
 ## 1. Hello Word
 
 Ausgehend von der Sample App: 
-- Main.storyboard öffnen, einen Label "Hello World" einfügen hinzufügen. 
-- Achtung: Constraints sind manchal mühsam, abhilfe via: 
+- Main.storyboard öffnen, eine neue View hinzufügen
+- In der view einen Label "Hello World" einfügen hinzufügen. 
+- Wichtig: der den App "Start Pfeil" auf die neue View setzen
+- Achtung: Das Layout kann manchmal mühsam sein. Quick and Dirty Abhilfe via Simulated Metrics -> Size "iPhone 4.7-inch" oder über die Constraints: 
 ![alt text](images/s0.png)
 
 "Run" im Simulator. 
