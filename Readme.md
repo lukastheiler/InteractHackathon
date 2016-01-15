@@ -1,30 +1,51 @@
-# Hackathon Aufgaben
+# Setup
+
+- Es soll ein intensiver und spassiger Tag werden 
+- Jedes Team stellt am Ende vom Tag in einm 5' Pitch vor, was es gemacht hat.
+- Wir bilden 3-er Teams, 1 Mac 3 Phones, 3. Beacons 3 Personen.
+- Wichtig: Keine Frage ist zu blöd, stellt soviele ihr könnt!
+
+# "Junior Hacker" Training 1
+
+*Zwingend für alle Junior Hackers*
+
+## Interactor
+Interactor Konfigurieren: einloggen, Beacons hinzufügen. 
+
+## App
+Sample App [runterladen](https://developer.interactor.swisscom.ch/download-sdk-and-apps), in XCode öffnen, API Key anpassen app auf dem iPhone laufen lassen.
+
+## Play
+Notifications anpassen, Events usw. 
+Spielt folgende Usecases nach:
+- Ich komme in eine Zone : "Hallo Pina"
+- Ich verlasse eine Zone: "See you Pina"
+
+# "Junior Hacker" Training 2 
+*Optional für alle Junior Hackers, spielt mit eurer eigenen idee*
 
 Das erste Ziel ist, eine App zu erstellen, welche zählt, wie oft ich beim Beacon vorbeigekommen bin. 
 
-Wichtig: Keine Frage ist zu blöd, stellt soviele ihr könnt!
-
 ## 1. Hello Word
 
-Xcode starten, Projekt hinzufügen, Umgebung erklären. 
-
-Main.storyboard öffnen, einen Label "Hello World" einfügen hinzufügen. 
-Achtung: Constraints sind manchal mühsam, abhilfe via: 
+Ausgehend von der Sample App: 
+- Main.storyboard öffnen, einen Label "Hello World" einfügen hinzufügen. 
+- Achtung: Constraints sind manchal mühsam, abhilfe via: 
 ![alt text](images/s0.png)
 
 "Run" im Simulator. 
 
 iPhone anhängen, Run auf iPhone (Braucht Apple ID + Credentials)
-_--> Frage:  Wer hat den Account ?_
 
 ![alt text](images/s1.png)
 
-## 2. Interaktion hinzufügen
-Button "Count" hinzufügen
-IBAction für Button erstellen
-IBoutlet für Label erstellen
-Variable "count" erstellen, +1 bei action.
-Problem: beim laden ist der counter nicht 0. Lösung z.B. über funktion.
+## 2. Interaktion im XCode Projekt hinzufügen
+- Button "Count" hinzufügen
+- IBAction für Button erstellen
+- IBoutlet für Label erstellen
+- Variable "count" erstellen, +1 bei action.
+
+Problem: beim Laden ist der counter nicht 0. Lösung z.B. über funktion.
 
 ```swift
 class ViewController: UIViewController {
@@ -57,7 +78,6 @@ class ViewController: UIViewController {
 ![alt text](images/s2.png)
 
 ## 3. Interactor konfigurieren
-Einloggen, Beacon hinzufügen. 
 Zone, Event, jedes mal ein push "CONTER!!", Zone auf sehr klein setzen.
 Batterie rausnehmen, da sonst das SDK kein Event triggert. 
 _--> Account für alle vorbanden?_
@@ -111,7 +131,7 @@ Für push notifications evt den Background mode anpassen (Bin mir grad nicht sic
 ```
 
 
-## Zusatzaufgaben
+## 6. Zusatzaufgaben
 
 - Erstelle ein App-Icon mittels [https://makeappicon.com](https://makeappicon.com).
 - Nehme 3 Beacons, setze die Hintergrundfarbe je nach Zone (Blau, Rot, Grün)
