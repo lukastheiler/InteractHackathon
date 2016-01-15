@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6E005DF1C48E0A4002E82B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E005DE1C48E0A4002E82B6 /* ViewController.swift */; };
 		FC2F274E1BEB626E000DED51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F274D1BEB626E000DED51 /* AppDelegate.swift */; };
 		FC2F27531BEB626E000DED51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2F27511BEB626E000DED51 /* Main.storyboard */; };
 		FC2F27551BEB626E000DED51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2F27541BEB626E000DED51 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6E005DE1C48E0A4002E82B6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC2F274A1BEB626E000DED51 /* InteractorSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractorSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2F274D1BEB626E000DED51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2F27521BEB626E000DED51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		FC2F27411BEB626E000DED51 = {
 			isa = PBXGroup;
 			children = (
+				B6E005DE1C48E0A4002E82B6 /* ViewController.swift */,
 				FC2F276C1BEB7CB0000DED51 /* libc++.tbd */,
 				FC2F27671BEB62FD000DED51 /* SystemConfiguration.framework */,
 				FC2F27651BEB62C3000DED51 /* Interactor_static.framework */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E005DF1C48E0A4002E82B6 /* ViewController.swift in Sources */,
 				FC2F274E1BEB626E000DED51 /* AppDelegate.swift in Sources */,
 				FC2F27711BEB7FE5000DED51 /* TableViewController.swift in Sources */,
 			);
@@ -323,6 +327,7 @@
 				FC2F275E1BEB626E000DED51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

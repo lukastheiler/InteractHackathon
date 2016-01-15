@@ -34,7 +34,10 @@ Ausgehend von der Sample App:
 - Main.storyboard öffnen, eine neue View hinzufügen
 - In der view einen Label "Hello World" einfügen hinzufügen. 
 - Wichtig: der den App "Start Pfeil" auf die neue View setzen
-- Achtung: Das Layout kann manchmal mühsam sein. Quick and Dirty Abhilfe via Simulated Metrics -> Size "iPhone 4.7-inch" oder über die Constraints: 
+- Achtung: Das Layout kann manchmal mühsam sein. Quick and Dirty Abhilfe via Simulated Metrics -> Size "iPhone 4.7-inch" 
+![alt text](images/s4.png)
+
+oder über die Constraints: 
 ![alt text](images/s0.png)
 
 "Run" im Simulator. 
@@ -44,12 +47,22 @@ iPhone anhängen, Run auf iPhone (Braucht Apple ID + Credentials)
 ![alt text](images/s1.png)
 
 ## 2. Interaktion im XCode Projekt hinzufügen
+In der View: 
 - Button "Count" hinzufügen
+
+Zur View braucht es den entsprechenden Klasse, erstellt diese via File>new>Cocoa Touch Class > viewController (Subclass of UIViewController, language Swift). 
+
+![alt text](images/s5.png)
+
+Die View im StoryBoard müsst ihr mit dem Source File verlinken: 
+
+![alt text](images/s6.png) 
+
+Mit Drag und Drop aus dem Main Storyboard erstellt Ihr jeweils: 
 - IBAction für Button erstellen
 - IBoutlet für Label erstellen
-- Variable "count" erstellen, +1 bei action.
 
-Problem: beim Laden ist der counter nicht 0. Lösung z.B. über funktion.
+Und eine Variable "count" erstellen, +1 bei action zählen soll. Das ganze sieht dann etwa so aus: 
 
 ```swift
 class ViewController: UIViewController {
@@ -78,6 +91,7 @@ class ViewController: UIViewController {
 }
 
 ```
+Problem: beim Laden ist der counter nicht 0. Lösung z.B. über funktion.
 
 ![alt text](images/s2.png)
 
